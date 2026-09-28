@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Variables and Calculator</title>
+</head>
+
+<body>
+
+  <h3>Cart Quantity</h3>
+
+  <button onclick="quantity += 4; console.log(quantity)">+4</button>
+  <button onclick="quantity += 5; console.log(quantity)">+5</button>
+  <button onclick="quantity -= 1; console.log(quantity)">Remove</button>
+  <button onclick="quantity -= 2; console.log(quantity)">-2</button>
+  <button onclick="quantity -= 3; console.log(quantity)">-3</button>
+
+  <h3>Simple Calculator</h3>
+
+  <button onclick="calculation += '1'; console.log(calculation)">1</button>
+  <button onclick="calculation += '2'; console.log(calculation)">2</button>
+  <button onclick="calculation += '3'; console.log(calculation)">3</button>
+  <button onclick="calculation += ' + '; console.log(calculation)">+</button>
+  <button onclick="calculation = eval(calculation); console.log(calculation)">=</button>
+
+  <script>
+    // 5a
+    let name = 'Siddharth';
+
+    // 5b
+    console.log(`My name is: ${name}`);
+
+    // 5c
+    let coffee = 5;
+    let bagels = 2 * 3;
+    let soup = 9;
+
+    let cost = coffee + bagels + soup;
+
+    // 5d
+    console.log(`Cost of food: $${cost}`);
+
+    // 5e
+    let tax = cost * 0.1;
+
+    // 5f
+    console.log(`Tax (10%): $${tax}`);
+
+    // 5g
+    let totalCost = cost + tax;
+    console.log(`Total cost: $${totalCost}`);
+
+    // 5h-5k
+    let quantity = 0;
+
+    // Calculator
+    let calculation = '';
+  </script>
+
+</body>
+</html>
